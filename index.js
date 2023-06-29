@@ -1,22 +1,11 @@
-// @ts-check
+const express = require('express');
+const app = express();
+const port = 3000;
 
-//load database from files "userData.json" and "productData.json"
+// Ruta para servir archivos estáticos
+app.use(express.static(__dirname));
 
-import { baseDeDatosUsuarios, Usuario } from './scripts/database';
-
-baseDeDatosUsuarios.add(new Usuario());
-
-/** @param {boolean} condicion  */
-/** @param {string} direccion  */
-function redirigir(condicion, direccion)
-{
-    if(condicion)
-    {
-        //redirigir a nueva pagina
-        window.location.href=direccion;
-    }
-    else
-    {
-        alert("Usuario o contraseña incorrectos");
-    }
-}
+// Iniciar el servidor
+app.listen(port, () => {
+  console.log(`La aplicación web está en funcionamiento en http://localhost:${port}`);
+});

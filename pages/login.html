@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content ="IE=edge">
-    <meta name="viewport"content ="width=device-width,initial-scale=1.0">
-    <link rel="script" href="../index.ts">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="script" href="../index.ts" />
+    <script src="../scripts/sessions.js"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-       <div class="formulario">
-        <h1>Inicio de sesion</h1>
-        <form method="post">
-            <div class="username">
-                <input type="text"required>
-                <label>Nombre de Usuario</label>
-            </div>
-            <div class="username">
-                <input type="password"required>
-                <label>Contraseña</label>
-            </div>
-            <div class="recordar">¿Olvido su contraseña?</div>
-            <input type="submit" value="Iniciar"
-                onclick="redirigir(iniciarSesion($username,$password), './pages/inicio.html')"
-            >
-            <div class="registrarse">
-                Quiero hacer el <a href="a">registro</a>
-            </div>
-           
-        </form>
-        <script src="index.ts"></script>
-       </div>
-    </body>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <div class="formulario">
+      <h1>Inicio de sesion</h1>
+      <form method="post">
+        <div class="username">
+          <input type="text" required />
+          <label>Nombre de Usuario</label>
+        </div>
+        <div class="username">
+          <input type="password" required />
+          <label>Contraseña</label>
+        </div>
+        <div class="recordar">¿Olvido su contraseña?</div>
+        <button type="button" onclick="redirigir(true, 'inicio.html')">
+          Iniciar sesión
+        </button>
+
+        <div class="registrarse">
+          Quiero hacer el <a href="register.html">registro</a>
+        </div>
+      </form>
+      <script src="../scripts/sessions.js"></script>
+    </div>
+  </body>
+</html>

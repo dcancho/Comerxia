@@ -3,11 +3,11 @@
 export class Usuario {
   constructor() {
     this.id = 1;
-    this.nombre = "test";
-    this.nombreUsuario = "JohnDoe";
-    this.correoElectronico = "johndoe@example.com";
-    this.contraseña = "54FJf&3?2@";
-    this.telefono = "1234567890";
+    this.name = "test";
+    this.username = "JohnDoe";
+    this.email = "johndoe@example.com";
+    this.password = "54FJf&3?2@";
+    this.phoneNumber = "1234567890";
     this.direccion = "1234 Main St";
     this.ciudad = "Anytown";
     this.ubicacion = [525, 566];
@@ -25,25 +25,29 @@ export class Producto {
     this.descripcion = "descripción del producto de prueba";
     this.precio = 20.5;
     this.cantidad = 100;
-    this.categoria = "categoría de prueba";
     this.idVendedor = 1;
   }
 }
-
-export const baseDeDatosUsuarios = {
-  datos: new Map(),
-  getByNombreUsuario(nombreUsuario) {
+export class BaseDeDatosUsuarios {
+  constructor() {
+    this.datos = new Map();
+  }
+  /** @param {string} nombreUsuario  */
+  getByUsername(nombreUsuario) {
     return this.datos.get(nombreUsuario);
-  },
-  get(id) {
+  }
+  /** @param {number} id  */
+  getById(id) {
     return this.datos.get(id);
-  },
+  }
   add(usuario) {
     this.datos.set(usuario.id, usuario);
   }
-};
+}
 
-export const baseDeDatosProductos = {
+const baseDeDatosUsuarios = new BaseDeDatosUsuarios();
+
+const baseDeDatosProductos = {
   datos: new Map(),
   get(id) {
     return this.datos.get(id);

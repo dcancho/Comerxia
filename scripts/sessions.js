@@ -1,11 +1,10 @@
 // @ts-check
 
-import { baseDeDatosUsuarios } from "./database";
-
-function iniciarSesion(nombreUsuario, contraseña) {
-    var usuario = baseDeDatosUsuarios.getByNombreUsuario(nombreUsuario);
-    if (usuario.contraseña === contraseña) {
-        return true;
+/** @param {boolean} condicion  */
+/** @param {string} ruta  */
+function redirigir(condicion, ruta){
+    if (condicion)
+    {
+        window.location.href = ruta;
     }
-    return false;
 }
