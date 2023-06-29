@@ -8,6 +8,7 @@
     <script src="../scripts/sessions.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" href="../assets/white-logo.svg" />
   </head>
   <body>
     <div class="formulario">
@@ -15,16 +16,27 @@
       <form method="post">
         <div class="username">
           <input type="text" required />
-          <label>Nombre de Usuario</label>
+          <label>Nombres y apellidos</label>
+        </div>
+        <div class="username">
+          <input type="text" required />
+          <label>Nombre de usuario</label>
+        </div>
+        <div class="username">
+          <input type="text" required />
+          <label>Correo electrónico</label>
         </div>
         <div class="username">
           <input type="password" required />
           <label>Contraseña</label>
         </div>
-        <button type="button" onclick="redirigir(true, 'inicio.html')">
+        <div class="username">
+          <input type="password" required />
+          <label>Confirmar contraseña</label>
+        </div>
+        <button type="button" onclick="redirigir(true, 'actividades.html')">
           Registrarse
         </button>
-
         <div class="registrarse">
           Quiero <a href="login.html">iniciar sesión</a>
         </div>

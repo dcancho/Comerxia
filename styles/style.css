@@ -114,6 +114,13 @@ button[type="button"]{
     transition: .5s;
 }
 
+/* When input has content, hide label*/
+input:valid ~ label,
+input:focus ~ label{
+    top: -5px;
+    color:#ff9100
+}
+
 .registrarse{
     margin:30px 0;
     text-align: center;
