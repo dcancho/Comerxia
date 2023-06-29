@@ -1,41 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu</title>
-    <link rel="stylesheet" href="../styles/mobile.css">
-</head>
-<body>
-    
-    <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../styles/estilo.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <script src="../scripts/app.js" async></script>
+    <title>Carrito de Compras |</title>
+  </head>
+  <body>
+    <div id="page-header">
+      <header>
+        <nav>
+          <div id="header-logo-container">
+            <img
+              id="header-logo"
+              src="../assets/original-isologo.svg"
+              onclick="window.location.href='../../index.html'"
+              alt="Logo"
+            />
+          </div>
+          <div>
+            <ul id="header-navbar">
+              <li
+                class="header-option"
+                onclick="window.location.href='actividades.html'"
+              >
+                Actividades
+              </li>
+              <li
+                class="header-option"
+                onclick="window.location.href='productos.html'"
+              >
+                Productos
+              </li>
+              <li
+                class="header-option"
+                onclick="window.location.href='contactos.html'"
+              >
+                Contactos
+              </li>
+              <li
+                class="header-option"
+                onclick="window.location.href='soporte.html'"
+              >
+                Soporte
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
 
-        <div class="contect">
-
-            <div class="menu cotainer">
-                <a href="index.html" class="logo">logo</a>
-                <input type="checkbox" id="menu" />
-                <label for="menu">
-                    <img src="imagenes/menu.png"class="menu-icono" alt="">
-                </label>
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="menu.html">Inicio</a></li>
-                        <li><a href="Actividades.html">Actividades</a></li>
-                        <li><a href="Producto.html">Productos</a></li>
-                        <li><a href="Contacto.html">Contactos</a></li>
-                        <li><a href="Soporte.html">Soporte</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-
+    <h1>Productos</h1>
+    <section class="contenedor">
+      <!-- Contenedor de elementos -->
+      <div class="contenedor-items">
+        <div class="item">
+          <span class="titulo-item">Coca Cola 500ml</span>
+          <img src="../img/coca.jpg" alt="" class="img-item" />
+          <span class="precio-item">S/ 12.99</span>
+          <button class="boton-item">Agregar al Carrito</button>
         </div>
-    </header>
+        <div class="item">
+          <span class="titulo-item">Shampoo H&S Frasco 375 ml</span>
+          <img src="../img/hys.webp" alt="" class="img-item" />
+          <span class="precio-item">S/ 17.50</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Aceite Vegetal Primor Premium 900ml</span>
+          <img src="../img/primor.webp" alt="" class="img-item" />
+          <span class="precio-item">S/ 11.50</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Arroz Extra Costeño 5kg</span>
+          <img src="../img/arroz.webp" alt="" class="img-item" />
+          <span class="precio-item">S/ 21.90</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item"
+            >Yogurt Parcialmente Descremado Fresa Gloria Botella 1 kg</span
+          >
+          <img src="../img/yogurt.jpg" alt="" class="img-item" />
+          <span class="precio-item">S/ 6.80</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Vino Borgoña Queirolo 750ml</span>
+          <img src="../img/vino.webp" alt="" class="img-item" />
+          <span class="precio-item">S/ 17.90</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item"
+            >Desinfectante multiuso SAPOLIO Lavanda Botella 900Ml
+          </span>
+          <img src="../img/desin.webp" alt="" class="img-item" />
+          <span class="precio-item">S/ 6.20</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+          <span class="titulo-item">Papel Higiénico Elite x24 rollos</span>
+          <img src="../img/papel.jpg" alt="" class="img-item" />
+          <span class="precio-item">S/ 27.90</span>
+          <button class="boton-item">Agregar al Carrito</button>
+        </div>
+      </div>
+      <!-- Carrito de Compras -->
+      <div class="carrito" id="carrito">
+        <div class="header-carrito">
+          <h2>Tu Carrito</h2>
+        </div>
 
-    <h1>Inicio</h1>
-
-
-</body>
+        <div class="carrito-items">
+          <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+        </div>
+        <div class="carrito-total">
+          <div class="fila">
+            <strong>Tu Total</strong>
+            <span class="carrito-precio-total"> S/169.90 </span>
+          </div>
+          <button class="btn-pagar">
+            Pagar <i class="fa-solid fa-bag-shopping"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

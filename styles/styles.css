@@ -5,21 +5,19 @@
 }
 
 * {
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	background:linear-gradient(#00ACAB, #B0F3F2);
-	background-size: 400% 300%;
+	/* background-size: 400% 300%; */
 	position: relative;
 	font-family: 'Roboto', sans-serif;
 }
 
 main {
 	max-width: 1000px;
-	width: 120%;
 	margin: 40px auto;
 }
 
